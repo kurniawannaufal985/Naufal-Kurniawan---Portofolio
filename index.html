@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Naufal Kurniawan — Portofolio Personal</title>
+    
+    <!-- Google Fonts (Poppins & Lexend) & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Library Animasi Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Style CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas Interactive Elements -->
+    <div id="particles-js"></div>
+    <div class="cursor-spotlight" id="cursorSpotlight"></div>
+
+    <!-- Ambient Lighting Overlays -->
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav>
+            <a href="#home" class="nav-brand">
+                <span class="brand-dot"></span> NAUFAL.K
+            </a>
+            
+            <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#data-diri">Data Diri & Kemampuan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+
+            <a href="https://wa.me/6285770924023" target="_blank" class="btn-nav-cta">HUBUNGI SAYA</a>
+        </nav>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
+                    <h1 class="hero-title">
+                        Halo, Saya <br><span class="gradient-text">Naufal Kurniawan</span>
+                    </h1>
+                    <p class="hero-description">
+                        Mahasiswa Teknik Informatika dengan latar belakang Multimedia dan pengalaman profesional di bidang Digital Publishing, Operasional Logistik, serta Pendampingan Instansi. Siap membangun solusi teknologi yang efisien dan berkualitas.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/6285770924023" target="_blank" class="btn-primary">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Saya
+                        </a>
+                        <a href="#pengalaman" class="btn-secondary">
+                            <i class="fas fa-briefcase"></i> Lihat Pengalaman
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-photo-container" data-aos="zoom-in-up" data-aos-duration="900" data-aos-delay="150">
+                    <div class="photo-arch-frame">
+                        <img src="foto naufal.png" alt="Naufal Kurniawan" class="hero-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Highlights -->
+            <div class="stats-bar">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Pengalaman Kerja Profesional</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Komitmen & Kedisiplinan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Section Tentang Saya & Pendidikan -->
+    <section id="tentang">
+        <div class="container grid-2">
+            <div class="glass-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                <span class="section-tag">Profil Ringkas</span>
+                <h3>Tentang Saya</h3>
+                <p class="about-text">
+                    Saya lulusan SMK jurusan Multimedia (2023) yang saat ini sedang menempuh studi S1 Teknik Informatika (Kelas Karyawan) di Universitas Indraprasta PGRI (UNINDRA). Memiliki pengalaman kerja langsung di bidang pengolahan konten digital, manajemen operasional logistik, dan pendampingan instansi. Berdedikasi tinggi, berdisiplin kerja, cepat beradaptasi, serta berkomitmen memberikan hasil kerja terbaik.
+                </p>
+            </div>
+
+            <div class="glass-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <span class="section-tag">Riwayat Studi</span>
+                <h3>Pendidikan</h3>
+                <ul class="info-list">
+                    <li>
+                        <label>2024 - Sekarang</label>
+                        <span>UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)</span>
+                        <div class="edu-sub primary">S1 TEKNIK INFORMATIKA (KELAS KARYAWAN)</div>
+                    </li>
+                    <li>
+                        <label>2020 - 2023</label>
+                        <span>SMK TUNAS BANGSA (DECES)</span>
+                        <div class="edu-sub muted">JURUSAN MULTIMEDIA</div>
+                    </li>
+                    <li>
+                        <label>2017 - 2020</label>
+                        <span>SMP IT AL-FADL</span>
+                    </li>
+                    <li>
+                        <label>2011 - 2017</label>
+                        <span>SD ISLAM RAMAH ANAK</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Section Pengalaman Kerja -->
+    <section id="pengalaman">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+                <span class="section-tag">Rekam Jejak</span>
+                <h2 class="section-title">Pengalaman Kerja</h2>
+            </div>
+
+            <div class="grid-2 grid-pengalaman" data-aos="fade-up" data-aos-duration="800">
+                <!-- 1. SD Islam Ramah Anak - Guru TIK (Sementara) -->
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <span class="job-date">27 JUL 2026 – 02 OKT 2026</span>
+                    <h3 class="job-company">SD Islam Ramah Anak</h3>
+                    <div class="job-role">Guru TIK (Sementara)</div>
+                    <strong class="job-heading">Tugas Utama:</strong>
+                    <ul class="bullet-list">
+                        <li>Menyusun administrasi dan perangkat pembelajaran TIK</li>
+                        <li>Menangani perbaikan jaringan LAN Laboratorium Komputer</li>
+                        <li>Memasang dan mengonfigurasi Wi-Fi di setiap gedung sekolah</li>
+                        <li>Mendukung kesiapan infrastruktur TIK untuk kegiatan pembelajaran</li>
+                    </ul>
+                </div>
+
+                <!-- 2. SD Islam Ramah Anak - Guru Pendamping -->
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                    <span class="job-date">10 JUL 2024 – 01 DES 2025</span>
+                    <h3 class="job-company">SD Islam Ramah Anak</h3>
+                    <div class="job-role">Guru Pendamping</div>
+                    <strong class="job-heading">Tugas Utama:</strong>
+                    <ul class="bullet-list">
+                        <li>Mendampingi kegiatan instruksional & belajar kelas</li>
+                        <li>Membantu perkembangan kognitif dan motorik siswa</li>
+                        <li>Menciptakan lingkungan belajar aman, nyaman, dan ramah</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Gudang Shopee SPX -->
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-boxes"></i></div>
+                    <span class="job-date">10 OKT – 25 DES 2023</span>
+                    <h3 class="job-company">Gudang Shopee SPX</h3>
+                    <div class="job-role">Daily Worker (DW)</div>
+                    <strong class="job-heading">Tugas Utama:</strong>
+                    <ul class="bullet-list">
+                        <li>Penyortiran paket dan akurasi tujuan pengiriman</li>
+                        <li>Proses packing serta scanning barcode barang sesuai SOP</li>
+                        <li>Menjaga ketepatan data dan ritme operasional gudang</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Gema Insani -->
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-file-invoice"></i></div>
+                    <span class="job-date">05 SEP 2022 – 28 FEB 2023</span>
+                    <h3 class="job-company">Gema Insani</h3>
+                    <div class="job-role">Digital Publishing (Prakerin)</div>
+                    <strong class="job-heading">Tugas Utama:</strong>
+                    <ul class="bullet-list">
+                        <li>Membantu pengolahan dan tata kelola konten digital</li>
+                        <li>Melakukan editing dasar materi publikasi</li>
+                        <li>Mendukung penyusunan layout desain & publikasi digital</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Section Proyek Aplikasi Web -->
+    <section id="proyek">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+                <span class="section-tag">Hasil Karya</span>
+                <h2 class="section-title">Proyek Aplikasi Web</h2>
+            </div>
+
+            <div class="project-clean-wrapper" data-aos="fade-up" data-aos-duration="800">
+                
+                <!-- Info Meta Proyek -->
+                <div class="project-meta-info">
+                    <span class="project-badge"><i class="fas fa-laptop-code"></i> Web-Based Teacher Administration System</span>
+                    <h3 class="project-title-main">Journal Teachers Planner</h3>
+                    <p class="project-subtitle">
+                        Mengembangkan aplikasi web untuk digitalisasi administrasi guru, mulai dari data peserta didik, absensi, aktivitas pembelajaran, penilaian, jurnal refleksi, hingga laporan. Sistem dirancang agar proses pencatatan dan pengelolaan administrasi guru menjadi lebih terorganisir dan mudah digunakan.
+                    </p>
+                    
+                    <div class="project-tech-stack">
+                        <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> Google Apps Script</span>
+                    </div>
+                </div>
+
+                <!-- Stage Showcase Gambar Slider -->
+                <div class="landscape-slider-stage">
+                    <button type="button" class="slider-arrow prev-arrow" id="prevSlideBtn" aria-label="Slide Kiri">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="landscape-viewport" id="landscapeViewport">
+                        <div class="landscape-track" id="landscapeTrack">
+                            <div class="landscape-slide">
+                                <img src="Journal TC - 1.png" alt="Portal Login Journal Teachers Planner">
+                            </div>
+                            <div class="landscape-slide">
+                                <img src="Journal TC - 2.png" alt="Dashboard Utama Journal Teachers Planner">
+                            </div>
+                            <div class="landscape-slide">
+                                <img src="Journal TC - 3.png" alt="Modul Navigasi Journal Teachers Planner">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="slider-arrow next-arrow" id="nextSlideBtn" aria-label="Slide Kanan">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Deskripsi Slide -->
+                <div class="landscape-caption-container">
+                    <div class="caption-item active">
+                        <h4>01. Portal Login & Autentikasi Guru</h4>
+                        <p>Sistem keamanan masuk khusus pendidik dengan antarmuka presisi dan responsif.</p>
+                    </div>
+                    <div class="caption-item">
+                        <h4>02. Dashboard Utama Planner</h4>
+                        <p>Panel kontrol utama berisi rekapitulasi statistik, jam digital, dan navigasi modul.</p>
+                    </div>
+                    <div class="caption-item">
+                        <h4>03. Modul Administrasi Lengkap</h4>
+                        <p>Akses cepat ke data siswa, absensi, jurnal refleksi, nilai formatif, hingga cetak laporan.</p>
+                    </div>
+                </div>
+
+                <!-- Indikator Titik Navigasi Slider -->
+                <div class="slider-dots-nav">
+                    <span class="dot-nav active" onclick="goToProjectSlide(0)"></span>
+                    <span class="dot-nav" onclick="goToProjectSlide(1)"></span>
+                    <span class="dot-nav" onclick="goToProjectSlide(2)"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Section Data Diri & Kemampuan -->
+    <section id="data-diri">
+        <div class="container">
+            <div class="glass-card" data-aos="fade-up" data-aos-duration="800">
+                <div class="card-header-row">
+                    <div class="card-icon icon-no-margin"><i class="fas fa-id-card"></i></div>
+                    <div>
+                        <span class="section-tag tag-no-margin">Biodata & Kapabilitas</span>
+                        <h3 class="title-no-margin">Data Diri & Kemampuan</h3>
+                    </div>
+                </div>
+
+                <div class="grid-2 align-start gap-30">
+                    <!-- Sisi Kiri: Data Diri -->
+                    <div>
+                        <h4 class="sub-card-header">
+                            <i class="fas fa-address-card"></i> Informasi Data Diri
+                        </h4>
+                        <ul class="info-list">
+                            <li>
+                                <label>Tempat / Tanggal Lahir</label>
+                                <span>Depok, 23 Juli 2005</span>
+                            </li>
+                            <li>
+                                <label>Jenis Kelamin</label>
+                                <span>Laki-Laki</span>
+                            </li>
+                            <li>
+                                <label>Status</label>
+                                <span>Belum Menikah</span>
+                            </li>
+                            <li>
+                                <label>Kewarganegaraan</label>
+                                <span>Indonesia</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sisi Kanan: Kemampuan -->
+                    <div>
+                        <h4 class="sub-card-header">
+                            <i class="fas fa-cogs"></i> Keahlian & Keterampilan
+                        </h4>
+                        
+                        <div>
+                            <strong class="skill-category-label">Hard Skills:</strong>
+                            <div class="skill-tags">
+                                <div class="tag-item"><i class="fas fa-laptop-code"></i> Software Komputer</div>
+                                <div class="tag-item"><i class="fas fa-file-word"></i> Microsoft Office</div>
+                                <div class="tag-item"><i class="fas fa-paint-brush"></i> Design & Editing</div>
+                                <div class="tag-item"><i class="fas fa-database"></i> Administrasi Data</div>
+                                <div class="tag-item"><i class="fas fa-code"></i> Basic Web Development</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group-spacer">
+                            <strong class="skill-category-label">Soft Skills:</strong>
+                            <div class="skill-tags">
+                                <div class="tag-item"><i class="fas fa-comments"></i> Komunikasi Interpersonal</div>
+                                <div class="tag-item"><i class="fas fa-users"></i> Kerja Sama Tim (Teamwork)</div>
+                                <div class="tag-item"><i class="fas fa-bolt"></i> Adaptasi Cepat</div>
+                                <div class="tag-item"><i class="fas fa-user-clock"></i> Kedisiplinan Kerja</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Section Kontak -->
+    <section id="kontak">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <span class="section-tag">Penutup</span>
+                <h2 class="section-title">Hubungi Saya</h2>
+            </div>
+
+            <div class="grid-3 contact-grid-wrapper">
+                <a href="https://wa.me/6285770924023" target="_blank" class="glass-card contact-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-icon icon-no-margin"><i class="fab fa-whatsapp"></i></div>
+                    <div class="contact-details">
+                        <div class="contact-label">TELEPON / WA</div>
+                        <div class="contact-value">0857-7092-4023</div>
+                    </div>
+                </a>
+
+                <a href="mailto:kurniawannaufal90@gmail.com" class="glass-card contact-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-icon icon-no-margin"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <div class="contact-label">EMAIL</div>
+                        <div class="contact-value font-sm">kurniawannaufal90@gmail.com</div>
+                    </div>
+                </a>
+
+                <div class="glass-card contact-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-icon icon-no-margin"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-details">
+                        <div class="contact-label">ALAMAT</div>
+                        <div class="contact-value font-xs">Jl. M. Nasir Kp. Bendungan 109 Depok, Jawa Barat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Naufal Kurniawan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Libraries & Custom Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
